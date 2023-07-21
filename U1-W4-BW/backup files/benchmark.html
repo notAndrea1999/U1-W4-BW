@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/epicode_logo.png" alt="logoEpicode" />
+      <nav class="nav">
+        <div class="containerTimer">
+          <div class="inContainer">
+            <p class="timerSeconds">Seconds</p>
+            <p id="countdown"></p>
+            <p class="timerRemains">Remaining</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="questionH1"></h1>
+      <div class="questionButton">
+        <div>
+          <button id="primo" class="unselected"></button>
+          <button id="secondo" class="unselected selected"></button>
+        </div>
+        <div>
+          <button id="terzo" class="unselected"></button>
+          <button id="quarto" class="unselected"></button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3>
+        QUESTION <span id="changingNumber"></span>
+        <span class="pink"> / 10</span>
+      </h3>
+    </footer>
+    <script src="benchmark.js"></script>
+  </body>
+</html>

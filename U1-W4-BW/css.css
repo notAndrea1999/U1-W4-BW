@@ -1,0 +1,493 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  padding-inline: 90px;
+  padding-block: 35px;
+  font-family: "Outfit", sans-serif;
+  background-size: cover;
+}
+
+.headerWelcome {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+header img {
+  width: 155px;
+  display: inline-block;
+}
+.mainWelcome {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.footerWelcome {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+footer form button {
+  background-color: aqua;
+  margin-left: 200px;
+  font-weight: 750;
+  font-size: 20px;
+  border: none;
+  padding-block: 15px;
+  padding-inline: 50px;
+  box-shadow: 0px 0px 13px 3px #00ffff;
+}
+footer form button:disabled {
+  background-color: rgb(134, 134, 134);
+  margin-left: 200px;
+  font-weight: 750;
+  font-size: 20px;
+  border: none;
+  padding-block: 15px;
+  padding-inline: 50px;
+  box-shadow: 0px 0px 13px 3px #00ffff00;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 60px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+li strong {
+  font-weight: 500;
+}
+
+h2 {
+  color: rgb(194, 18, 141);
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.pink {
+  color: rgb(194, 18, 141);
+}
+
+p {
+  margin-top: 0;
+  padding-bottom: 25px;
+  font-weight: 200;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+.check:not(.check:checked) {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  border: solid 2px white;
+  appearance: none;
+  margin: 0px 6px;
+  vertical-align: text-top;
+}
+
+.check:checked {
+  accent-color: aqua;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  background: rgba(40, 40, 40, 0.2);
+  accent-color: #00ffff;
+  border: solid 2px white;
+  accent-color: aqua;
+  margin: 0px 6px;
+  vertical-align: text-top;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.star {
+  height: 50px;
+  background-size: cover;
+  margin: 0px 6px;
+}
+
+.rating {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-block: 30px 0;
+  padding-bottom: 10px;
+}
+
+.ratingP {
+  text-align: center;
+  font-size: 26px;
+}
+
+.disabled {
+  filter: invert(14%) sepia(32%) saturate(3193%) brightness(8%) contrast(109%);
+}
+.feedbackForm {
+  text-align: center;
+  font-size: 26px;
+  padding-top: 55px;
+}
+
+.feedbackP {
+  margin-bottom: 10px;
+}
+
+.feedbackInput {
+  width: 82%;
+  background-color: transparent;
+  font-size: 17px;
+  border-top: none;
+  border-bottom: 2px solid rgb(194, 18, 141);
+  border-inline: none;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  color: white;
+}
+
+.feedbackButton {
+  background-color: aqua;
+  font-weight: 750;
+  font-size: 20px;
+  border: none;
+  padding-block: 15px;
+  padding-inline: 50px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 13px 3px #00ffff;
+  color: black;
+  font-weight: 800;
+}
+
+input:focus {
+  padding-left: 6px;
+  color: white;
+  outline: none;
+}
+
+.ovale {
+  width: 300px;
+  height: 50px;
+  background: red;
+  display: inline-block;
+  border-radius: 30px;
+}
+.questionH1 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 40px;
+  line-height: 100%;
+  margin-top: 120px;
+  height: 80px;
+}
+
+.questionButton {
+  display: flex;
+  justify-content: center;
+  margin-inline: 30%;
+  height: 220px;
+}
+
+#primo,
+#secondo,
+#terzo,
+#quarto {
+  margin-left: 40px;
+  border-radius: 60px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-top: 3px outset white;
+  border-bottom: 3px outset rgba(255, 255, 255, 0.445);
+  border-left: 3px solid white;
+  border-right: 3px outset rgba(255, 255, 255, 0.445);
+  margin-top: 50px;
+  width: 400px;
+  height: 65px;
+  background-color: rgba(128, 128, 128, 0.151);
+}
+
+#secondo,
+#quarto {
+  margin-top: 18px;
+}
+
+#primo:hover,
+#secondo:hover,
+#terzo:hover,
+#quarto:hover {
+  margin-left: 40px;
+  border-radius: 60px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-top: 3px solid white;
+  border-left: 2px solid white;
+  margin-top: 50px;
+  background-color: rgb(194, 18, 141);
+}
+
+#secondo:hover,
+#quarto:hover {
+  margin-top: 18px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.nav {
+  color: white;
+  float: right;
+}
+
+.timerSeconds {
+  margin-block: 0px;
+  padding: 0;
+  font-size: 7px;
+  margin-top: 12px;
+}
+
+.unselected {
+  background-color: rgb(41, 41, 84);
+}
+
+.timerRemains {
+  font-size: 7px;
+  padding-bottom: 0;
+  margin-bottom: 12px;
+}
+
+#countdown {
+  font-size: 35px;
+  padding: 0;
+  margin-block: 0;
+  font-weight: 300;
+}
+
+#primo:disabled,
+#terzo:disabled {
+  display: none;
+}
+
+.resultLogo {
+  padding-bottom: 0;
+}
+
+.resultH1,
+.resultH2 {
+  text-align: center;
+}
+
+.resultH1 {
+  margin-bottom: 0;
+  font-size: 55px;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 0px;
+}
+
+.resultH2 {
+  color: white;
+  font-weight: 200;
+  font-size: 30px;
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.punteggioGlobale {
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-inline: 40px;
+  box-shadow: 0px 0px 14px 4px #000000;
+}
+
+.inPunteggio {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/bg.jpg);
+  background-position: center;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0px 5px 0px #000000, inset 4px 4px 15px 0px #000000, -50px -50px 0px -30px rgba(0, 0, 0, 0);
+}
+
+.punteggioP {
+  display: flex;
+  justify-content: center;
+
+  font-size: 13px;
+}
+.punteggioH4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-block: 40px;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+}
+
+.resultFooter {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  margin-top: 40px;
+}
+.resultButton {
+  padding-block: 16px;
+  padding-inline: 60px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.correct {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 1;
+}
+.wrong {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: right;
+  line-height: 1;
+}
+
+.grosso {
+  margin-bottom: 0;
+  font-size: 55px;
+  font-weight: 300;
+}
+.medio {
+  margin-block: 0;
+  font-size: 55px;
+  font-weight: 700;
+}
+.piccolo {
+  margin-top: 0;
+  font-weight: 200;
+}
+
+.aqua {
+  color: #00ffff;
+}
+
+.red {
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000000;
+}
+
+.containerTimer {
+  display: flex;
+  justify-content: center;
+  padding: 3%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 120px;
+  box-shadow: 0px 0px 10px 1px #00000044;
+  padding-block: 12px;
+  padding-inline: 12px;
+  line-height: 23px;
+}
+
+.inContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/bg.jpg);
+  background-position: right;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0px 0px 0px 0px #0000001e, inset 4px 4px 15px 0px #0000009f;
+}
+
+fieldset {
+  border: none;
+  padding-inline: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  border: 2px ridge #4e1c65;
+  box-shadow: -13px 5px 13px 3px #4e1c65;
+}
+
+fieldset legend {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.selectDiff {
+  font-weight: 600;
+}
+
+#questionNumber {
+  background-color: transparent;
+  accent-color: aqua;
+}
+
+#difficulty {
+  background-color: transparent;
+  accent-color: aqua;
+}
+
+label {
+  font-size: 25px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+
+.selectButton {
+  background-color: aqua;
+  font-weight: 750;
+  font-size: 20px;
+  border: none;
+  padding-block: 15px;
+  padding-inline: 50px;
+  box-shadow: 0px 0px 13px 3px #00ffff;
+}
